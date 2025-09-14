@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // AWS Amplify supports Next.js SSR, so we keep ISR enabled
-  // No need for output: 'export' since we want server-side features
+  // Enable standalone output for AWS Amplify SSR deployment
+  output: 'standalone',
   
   // Optimize images (Amplify supports this)
   images: {

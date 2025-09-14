@@ -16,5 +16,6 @@ frontend:
       - .next/cache/**/*
       - node_modules/**/*
   env:
-    # Fix NODE_ENV warning by setting it explicitly
     NODE_ENV: production
+    # Ensure Next.js uses SSR mode, not static export
+    NEXT_OUTPUT_MODE: standalone
